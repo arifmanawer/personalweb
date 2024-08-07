@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useTheme as useNextTheme } from "next-themes";
-import { Link } from "react-scroll/modules";
+import { Link } from "react-scroll";
 import {
   Box,
   Typography,
@@ -24,7 +24,7 @@ type NavItem = {
 const navItems: NavItem[] = [
   { label: "Home", page: "home" },
   { label: "About", page: "about" },
-  { label: "Services", page: "services" },
+  { label: "Projects", page: "Projects" },
 ];
 
 const Navbar = () => {
