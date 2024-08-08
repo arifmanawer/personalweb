@@ -1,3 +1,4 @@
+import AboutSection from "@/components/AboutSection";
 import HomeSection from "@/components/HomeSection";
 import { Box } from "@mui/material";
 
@@ -9,6 +10,7 @@ export default function Home() {
       px={{ sm: "6", md: "4" }}
     >
       <HomeSection />
+      <AboutSection />
     </Box>
   );
 }

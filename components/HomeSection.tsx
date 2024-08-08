@@ -13,7 +13,7 @@ const HomeSection = () => {
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Box component="section">
+    <Box component="section" id="home">
       <Box
         display={"flex"}
         flexDirection={{ md: "row", xs: "column" }}
@@ -21,9 +21,8 @@ const HomeSection = () => {
         alignItems={"center"}
         textAlign={"center"}
         marginTop={10}
-        marginBottom={{ xs: 2, md: 10 }}
-        py={10}
-        paddingTop={{ xs: 10, md: 25 }}
+        marginBottom={{ xs: 2, md: 8 }}
+        paddingTop={{ xs: 10, md: 20 }}
       >
         <Box width={{ md: 1 / 2 }} mt={2}>
           <Image src="/arif_circle.png" alt="" width={400} height={400} />
@@ -43,16 +42,20 @@ const HomeSection = () => {
             variant={isSmallScreen ? "body1" : "h5"}
             marginTop={4}
             marginBottom={4}
+            paddingX={isSmallScreen ? 5 : 0}
           >
-            I am an aspiring Software Engineer based in New York City. I am
-            working towards using technology to make projects that are
-            meaningful and help make life easier.
+            I am an aspiring{" "}
+            <Box display={"inline"} color={"#5F9EA0"}>
+              Software Engineer
+            </Box>{" "}
+            based in New York City. I am working towards using technology to
+            make projects that are meaningful and help make life easier.
           </Typography>
         </Box>
       </Box>
       <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
         <Link
-          to="/about"
+          to="about"
           activeClass="active"
           spy={true}
           smooth={true}
@@ -68,7 +71,7 @@ const HomeSection = () => {
               ease: "easeOut",
             }}
           >
-            <HiArrowDown size={35} />
+            <HiArrowDown size={35} cursor={"pointer"} />
           </motion.div>
         </Link>
       </Box>

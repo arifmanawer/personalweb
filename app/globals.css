@@ -6,9 +6,7 @@
   margin: 0;
 }
 
-html, body {
-  transition: background-color 0.3s, color 0.3s;
-}
+
 
 html.light, body.light {
   background-color: #ffffff; /* Light theme background */
