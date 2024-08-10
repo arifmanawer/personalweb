@@ -56,9 +56,11 @@ const Navbar = () => {
     >
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Box>
-          <Typography variant="h4" fontWeight="bold">
-            Arif Manawer
-          </Typography>
+          <Link to="home" style={{ cursor: "pointer" }}>
+            <Typography variant="h4" fontWeight="bold">
+              Arif Manawer
+            </Typography>
+          </Link>
         </Box>
         {isSmallScreen ? (
           <IconButton onClick={() => setNavbar(!navbar)} color="inherit">

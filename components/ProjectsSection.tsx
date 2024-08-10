@@ -13,7 +13,7 @@ const projects = [
     title: "StockedUp",
     description:
       "A simple inventory tracker that allows users to add, edit, and delete items from their inventory.",
-    image: "/stockup.png",
+    image: "/stockedup.png",
     github: "https://github.com/arifmanawer/inventory-tracker",
     link: "https://inventory-tracker-teal.vercel.app/",
   },
@@ -62,16 +62,22 @@ const ProjectsSection = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                   >
-                    <Image
-                      src={project.image}
-                      alt=""
-                      width={isSmallScreen ? 350 : 400}
-                      height={isSmallScreen ? 192.5 : 220}
-                      style={{
-                        borderRadius: "8px",
-                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                      }}
-                    />
+                    <Link
+                      href={project.link}
+                      style={{ cursor: "pointer" }}
+                      target="_blank"
+                    >
+                      <Image
+                        src={project.image}
+                        alt=""
+                        width={isSmallScreen ? 350 : 400}
+                        height={isSmallScreen ? 192.5 : 220}
+                        style={{
+                          borderRadius: "8px",
+                          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                        }}
+                      />
+                    </Link>
                   </Box>
                   <Box
                     width={{ md: 1 / 2 }}
@@ -129,6 +135,11 @@ const ProjectsSection = () => {
               </Box>
             );
           })}
+        </Box>
+        <Box textAlign={"center"}>
+          <Typography variant={isSmallScreen ? "h6" : "h5"}>
+            more projects coming soon...
+          </Typography>
         </Box>
       </Box>
     </Box>
