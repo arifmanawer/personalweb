@@ -51,11 +51,9 @@ const HomeSection = () => {
             paddingRight={{ md: 5 }}
           >
             I am an aspiring{" "}
-            <Box display={"inline"} color={"#5F9EA0"}>
-              Software Engineer
-            </Box>{" "}
-            based in New York City. I am working towards using technology to
-            make projects that are meaningful and help make life easier.
+            <span style={{ color: "#5F9EA0" }}>Software Engineer</span> based in
+            New York City. I am working towards using technology to make
+            projects that are meaningful and help make life easier.
           </Typography>
         </Box>
       </Box>
