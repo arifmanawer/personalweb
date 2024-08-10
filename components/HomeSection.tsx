@@ -41,8 +41,9 @@ const HomeSection = () => {
           marginTop={{ md: 0, xs: 4 }}
         >
           <Typography variant={isSmallScreen ? "h3" : "h2"} fontWeight={"bold"}>
-            Hi, I'm Arif!
+            Hi, I&apos;m Arif!
           </Typography>
+
           <Typography
             variant={isSmallScreen ? "body1" : "h5"}
             marginTop={4}
