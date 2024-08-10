@@ -20,7 +20,7 @@ const skills = [
 const AboutSection = () => {
   return (
     <Box component={"section"} id="about">
-      <Box paddingBottom={{ xs: 12, md: 30 }} paddingTop={{ md: 10 }}>
+      <Box paddingBottom={{ xs: 6, md: 12 }} paddingTop={{ xs: 3, md: 10 }}>
         <Typography variant="h3" textAlign={"center"} fontWeight={"bold"}>
           About Me
         </Typography>
@@ -48,7 +48,7 @@ const AboutSection = () => {
             flexDirection={"column"}
             height={"100%"}
             width={{ md: 1 / 2 }}
-            paddingX={{ md: 4 }}
+            paddingX={{ sm: 5, md: 4 }}
           >
             <Typography
               variant="h5"
@@ -93,7 +93,7 @@ const AboutSection = () => {
               display={"flex"}
               flexWrap={"wrap"}
               flexDirection={"row"}
-              justifyContent={{ sm: "center", md: "flex-start" }}
+              justifyContent={{ xs: "center", md: "flex-start" }}
             >
               {skills.map((item, index) => {
                 return (

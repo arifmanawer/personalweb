@@ -21,11 +21,16 @@ const HomeSection = () => {
         alignItems={"center"}
         textAlign={"center"}
         marginTop={10}
-        marginBottom={{ xs: 2, md: 8 }}
+        marginBottom={{ xs: 8, md: 8 }}
         paddingTop={{ xs: 10, md: 20 }}
       >
         <Box width={{ md: 1 / 2 }} mt={2}>
-          <Image src="/arif_circle.png" alt="" width={400} height={400} />
+          <Image
+            src="/arif_circle.png"
+            alt=""
+            width={isSmallScreen ? 300 : 400}
+            height={isSmallScreen ? 300 : 400}
+          />
         </Box>
         <Box
           mt={{ md: 2 }}
@@ -43,6 +48,7 @@ const HomeSection = () => {
             marginTop={4}
             marginBottom={4}
             paddingX={isSmallScreen ? 5 : 0}
+            paddingRight={{ md: 5 }}
           >
             I am an aspiring{" "}
             <Box display={"inline"} color={"#5F9EA0"}>

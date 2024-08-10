@@ -24,7 +24,7 @@ type NavItem = {
 const navItems: NavItem[] = [
   { label: "Home", page: "home" },
   { label: "About", page: "about" },
-  { label: "Projects", page: "Projects" },
+  { label: "Projects", page: "projects" },
 ];
 
 const Navbar = () => {

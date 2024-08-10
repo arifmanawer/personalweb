@@ -1,5 +1,7 @@
 import AboutSection from "@/components/AboutSection";
 import HomeSection from "@/components/HomeSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import Footer from "@/components/Footer";
 import { Box } from "@mui/material";
 
 export default function Home() {
@@ -11,6 +13,8 @@ export default function Home() {
     >
       <HomeSection />
       <AboutSection />
+      <ProjectsSection />
+      <Footer />
     </Box>
   );
 }
