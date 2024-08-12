@@ -58,7 +58,7 @@ const AboutSection = () => {
               A Little Bit About Me ...
             </Typography>
             <Typography variant="body1" marginTop={2}>
-              I am Junior at the City College of New York studying Computer
+              I am a junior at the City College of New York studying Computer
               Science.
             </Typography>
             <Typography variant="body1" marginTop={2}>
@@ -70,7 +70,7 @@ const AboutSection = () => {
               spending time outside with friends and family.
             </Typography>
             <Typography variant="body1" marginTop={2}>
-              I am highly motivated and always looking to learn new things and
+              I am highly motivated, always looking to learn new things, and
               open to new opportunities.
             </Typography>
           </Box>
