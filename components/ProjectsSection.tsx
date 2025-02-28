@@ -17,6 +17,14 @@ const projects = [
     github: "https://github.com/arifmanawer/inventory-tracker",
     link: "https://inventory-tracker-teal.vercel.app/",
   },
+  {
+    title: "SiteSeekers",
+    description:
+      "A final project for my datavase class where I led a team to develop a hiring platform for contactors.",
+    image: "/siteseekers.png",
+    github: "https://github.com/datasheng/csc336-teamproject-repo-missing-one",
+    link: "https://youtu.be/TdzseFYCgNU",
+  },
 ];
 
 const ProjectsSection = () => {
