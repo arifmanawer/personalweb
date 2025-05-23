@@ -10,6 +10,14 @@ import { useTheme } from "@mui/material/styles";
 
 const projects = [
   {
+    title: "ChefIt",
+    description:
+      "A recipe platform that allows users to search for recipes, save recipes, and get recipe recommendations based on their preferences and ingredients.",
+    image: "/chefIt.png",
+    github: "https://github.com/notprowler/ChefIT",
+    link: "https://youtu.be/datpE8aGDkM",
+  },
+  {
     title: "StockedUp",
     description:
       "A simple inventory tracker that allows users to add, edit, and delete items from their inventory.",
