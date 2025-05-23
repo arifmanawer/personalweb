@@ -13,7 +13,7 @@ const projects = [
     title: "ChefIt",
     description:
       "A recipe platform that allows users to search for recipes, save recipes, and get recipe recommendations based on their preferences and ingredients.",
-    image: "/chefIt.png",
+    image: "/chefit.png",
     github: "https://github.com/notprowler/ChefIT",
     link: "https://youtu.be/datpE8aGDkM",
   },
